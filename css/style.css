@@ -1,0 +1,356 @@
+main{ 
+  width:100%; 
+  height:100%; 
+  position:absolute;
+}
+
+#topNav { 
+  padding: 20px 20px;
+  font-size: 30px;
+}
+.ali{ 
+  display: inline-block;
+  padding: 5px 5px;
+}
+.thirdCol{ 
+  padding: 25px 30px;
+  display: inline-block;
+}
+
+#center{ 
+  text-align: center;
+  padding: 10px 10px;
+}
+
+#right{ 
+  text-align: right;
+  margin-top:-5px;
+}
+#navBorderline {
+    border-width:1px;  
+    border-bottom-style:solid;
+    border-color:#A9A9A9;
+}
+#bottomBorderline{ 
+  border-width:0px;
+}
+
+#title{ 
+  font-family: 'Cookie'; 
+  font-size:40px;
+}
+input {
+  border-radius:1px;
+  width: 200px;
+  height: 30px;
+  text-align:center;
+  padding: 0px 20px;
+}
+input:focus{ 
+  text-align: left;  
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: black;
+  font-size: 16px;
+  placeholder:"Search";
+  font-family:'Poiret One';
+}
+.search { 
+  font-family: 'Poiret One';
+  font-size: 16px;
+}
+#profile { 
+  background-image: url("http://res.cloudinary.com/dzvorkzp2/image/upload/v1497973571/profile_ufppl7.jpg");
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#profileCol{ 
+  text-align:center;
+}
+#contactInfo1{ 
+  padding:20px 20px;
+  font-family: 'Poiret One';
+}
+#contactInfo2{ 
+  margin-left:10px;
+  font-family: 'Teko';
+}
+#editProfile{ 
+  width:120px;
+  height: 23px;
+  font-size:15px;
+  font-family:'Teko';
+}
+#icons{ 
+  margin-top:-10px;
+  margin-left:10px;
+}
+#bio{ 
+  font-family: 'Poiret One';
+}
+
+img{ 
+  width: 200px; 
+  height:200px;
+  cursor:crosshair;
+}
+#projects{ 
+  text-align:center;
+}
+#about { 
+  border:solid;
+  margin-bottom: 10px;
+  border-width:1px; 
+  border-color:#A9A9A9;
+}
+
+#aboutBox{ 
+  font-family: 'Poiret One'; 
+}
+img{ 
+  cursor: pointer;
+}
+li{ 
+  list-style-type: none;
+  text-align:center;
+  
+}
+
+footer{ 
+  font-family:'Poiret One'; 
+}
+img:hover{ 
+  opacity:0.7;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15px auto; /* 15% from the top and centered */
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+#imgModal{ 
+  width: 600px;
+  height: 600px;
+}
+#sub{ 
+  border-radius: 50%;
+  width:40px;
+  height:40px;
+  padding:5px;
+  align:bottom;
+}
+.displayFlex{ 
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: flex-start;
+  margin-top:10px;
+  font-family: 'Teko'; 
+}
+.noMargin{ 
+  margin:0 0 0 0;
+  font-size:20px;
+}
+.title-des{ 
+  font-family: 'Poiret One'; 
+}
+#t{
+  text-decoration: underline;
+  font-weight: bold;
+}
+.mTop{ 
+  margin-top:5px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ti {
+  font-family:'Poiret One';
+  background: white;
+  color: black;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+  margin-top:20px;
+} 
+
+.timeline ul {
+  background: white;
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: black;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: white;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent black;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: black;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent white transparent transparent;
+  }
+}
+.font{ 
+  font-family:'Cookie';
+  font-size:50px;
+}
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+ 
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
